@@ -1,0 +1,32 @@
+2026-04-20 10:47:52,858 - INFO - Written data: 'A' to file: data.txt
+2026-04-20 10:47:52,859 - INFO - Cache miss for key: file_data
+2026-04-20 10:47:52,859 - INFO - Cache miss for key: file_data
+2026-04-20 10:47:52,860 - INFO - Read data from file: data.txt, data: A 
+2026-04-20 10:47:52,860 - INFO - Cache expiry set to: 1776682372.8604767
+2026-04-20 10:47:52,860 - INFO - Cache set for key: file_data, value: ('A ', 1776682372.8604767)
+2026-04-20 10:47:52,860 - INFO - Cache set for key: file_data, value: A , expiry_time: 1776682372.8604767
+2026-04-20 10:47:53,863 - INFO - Written data: 'B' to file: data.txt
+2026-04-20 10:47:53,864 - INFO - Cache get for key: file_data, value: ('A ', 1776682372.8604767)
+2026-04-20 10:47:53,865 - INFO - Cache hit for key: file_data, value: A 
+2026-04-20 10:47:54,868 - INFO - Written data: 'C' to file: data.txt
+2026-04-20 10:47:54,869 - INFO - Cache get for key: file_data, value: ('A ', 1776682372.8604767)
+2026-04-20 10:47:54,869 - INFO - Cache hit for key: file_data, value: A 
+2026-04-20 10:47:55,872 - INFO - Written data: 'D' to file: data.txt
+2026-04-20 10:47:55,872 - INFO - Cache get for key: file_data, value: ('A ', 1776682372.8604767)
+2026-04-20 10:47:55,873 - INFO - Cache hit for key: file_data, value: A 
+2026-04-21 07:15:32,681 - INFO - Written data: 'A' to file: data.txt
+2026-04-21 07:15:32,682 - INFO - Cache miss for key: file_data
+2026-04-21 07:15:32,682 - INFO - Cache miss for key: file_data
+2026-04-21 07:15:32,683 - INFO - Read data from file: data.txt, data: A B C D A 
+2026-04-21 07:15:32,683 - INFO - Cache expiry set to: 1776756032.6831844
+2026-04-21 07:15:32,683 - INFO - Cache set for key: file_data, value: ('A B C D A ', 1776756032.6831844)
+2026-04-21 07:15:32,683 - INFO - Cache set for key: file_data, value: A B C D A , expiry_time: 1776756032.6831844
+2026-04-21 07:15:33,686 - INFO - Written data: 'B' to file: data.txt
+2026-04-21 07:15:33,687 - INFO - Cache get for key: file_data, value: ('A B C D A ', 1776756032.6831844)
+2026-04-21 07:15:33,687 - INFO - Cache hit for key: file_data, value: A B C D A 
+2026-04-21 07:15:34,690 - INFO - Written data: 'C' to file: data.txt
+2026-04-21 07:15:34,690 - INFO - Cache get for key: file_data, value: ('A B C D A ', 1776756032.6831844)
+2026-04-21 07:15:34,691 - INFO - Cache hit for key: file_data, value: A B C D A 
+2026-04-21 07:15:35,694 - INFO - Written data: 'D' to file: data.txt
+2026-04-21 07:15:35,694 - INFO - Cache get for key: file_data, value: ('A B C D A ', 1776756032.6831844)
+2026-04-21 07:15:35,694 - INFO - Cache hit for key: file_data, value: A B C D A 

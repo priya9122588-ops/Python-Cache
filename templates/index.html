@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cache + Chatbot</title>
+</head>
+<body>
+
+<h2>Enter Details</h2>
+
+<form method="POST">
+    <input type="text" name="name" placeholder="Name"><br><br>
+    <input type="number" name="age" placeholder="Age"><br><br>
+    <input type="text" name="value" placeholder="Value"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<!-- 🔥 SHOW CACHE OUTPUT (YOU COMMENTED THIS, UNCOMMENT IT) -->
+<!-- {% if output %}
+    <h3>Cache Data: {{ output }}</h3>
+{% endif %} -->
+
+<hr>  
+
+<h2>Chatbot</h2>
+
+<input type="text" id="query" placeholder="Ask like: age of karthikk">
+<button onclick="sendQuery()">Ask</button>
+
+<h3>Bot Response:</h3>
+<p id="chatResponse"></p>
+
+<script>
+function sendQuery() {
+    const query = document.getElementById("query").value;
+
+    fetch("/chat", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: "query=" + query
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log("Response:", data);  // 🔍 DEBUG
+        document.getElementById("chatResponse").innerText = data.response;
+    })
+    .catch(err => {
+        console.error("Error:", err);
+        document.getElementById("chatResponse").innerText = "Error occurred";
+    });
+}
+</script>
+
+</body>
+</html>
